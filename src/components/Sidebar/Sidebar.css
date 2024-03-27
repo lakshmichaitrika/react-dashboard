@@ -1,0 +1,69 @@
+.Sidebar{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+     background-color: rgb(106, 113, 113); 
+    transition: all 300ms ease;
+}
+
+.logo{
+    /* background-color: brown; */
+    display: flex;
+    height: 5%;
+    padding: 1.2rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+.logo>img{
+    width: 50%;
+    
+
+}
+.nav{
+    /* background-color: burlywood; */
+    margin-top: 0.9rem; 
+    display: flex;
+    flex-direction: column;
+    gap:2rem ;
+    padding-right: 2px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+height: 2.5rem;
+margin-left: 2rem;
+    font-size: 1.5rem;
+    gap:1rem;
+    position: relative;
+    transition: all 300ms ease;
+}
+.nav-items:hover{
+    cursor: pointer;
+    color: rgb(166, 237, 58);
+    margin-left: 0.2rem;
+    padding-left:0.2rem;
+    background-color: black;
+   border-radius: 10px;
+}
+.active{
+    color: rgb(154, 226, 47);
+    margin-left: 0.2rem;
+    background-color: black;
+   border-radius: 10px;
+}
+.active::before{
+    content: "";
+    width:8px ;
+    margin-right: calc(1rem - 8px);
+    height: 100%;
+    background-color:  rgb(166, 222, 82);
+}
+
+.menu .menuItem:last-child{
+    position:absolute;
+    bottom: 2.3rem;
+    width: 100%;
+}
+
+
