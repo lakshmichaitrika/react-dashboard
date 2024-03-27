@@ -1,0 +1,13 @@
+.card-container{
+    display: flex;
+    background-color: rgb(58, 60, 60); 
+    border-color: aqua;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    border-radius: 10px;
+    flex-direction: column;
+}
+h3{
+    color: rgb(71, 220, 71);
+}

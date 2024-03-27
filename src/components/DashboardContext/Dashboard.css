@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+padding: 10px;
+    justify-content: space-between;
+color: white;
+font-size: 20px;
+}
+.highlated-text{
+    color: rgb(40, 169, 40);
+}
+.icon{
+    color: yellow;
+}
+.text-content{
+    display: flex;
+    gap: 10px;
+}
+.header-button{
+    background-color:rgb(40, 169, 40) ;
+    color: white;
+    padding: 10px;
+    border: 0px ;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -9,14 +9,15 @@
     display: flex;
    justify-content: center;
    align-items: center;
-   background-color: black;
+   background-color: black ;
 }
 .content{
     display: grid;
     height: 97%;
     width: 97%;
     border-radius: 10px;
-    background-color: rgb(55, 52, 50);
-overflow:hidden;
+    background-color: rgb(29, 26, 24);
+ /* overflow:hidden; */
 grid-template-columns: 15rem auto;
 }
+
