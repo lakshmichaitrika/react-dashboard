@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ResponsiveContainer, PieChart, Pie, Tooltip, Cell ,Legend} from 'recharts';
+import { ResponsiveContainer, PieChart, Pie, Tooltip, Cell } from 'recharts';
 import "./Cards.css"
-import { Legend } from 'chart.js';
+
 const Cards = () => {
   const [cryptoData, setCryptoData] = useState({});
   const [loading, setLoading] = useState(true);
