@@ -1,13 +1,35 @@
+.cards{ 
+    display: flex; 
+    justify-content: space-around;
+    margin: 10px;
+    gap: 5px;
+   
+}
 .card-container{
     display: flex;
     background-color: rgb(58, 60, 60); 
     border-color: aqua;
     justify-content: center;
     align-items: center;
-    height: 70%;
     border-radius: 10px;
     flex-direction: column;
+    width: 30%;
 }
 h3{
     color: rgb(71, 220, 71);
+}
+@media screen and (max-width:768px){
+    .card-container{
+        flex-direction: column;
+        width: 100%;
+        margin: 30px;
+    }
+    .cards{ 
+        display: flex; 
+        justify-content: center ;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
 }

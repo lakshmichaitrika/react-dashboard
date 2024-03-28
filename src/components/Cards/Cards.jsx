@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ResponsiveContainer, PieChart, Pie, Tooltip, Cell } from 'recharts';
+import { ResponsiveContainer, PieChart, Pie, Tooltip, Cell ,Legend} from 'recharts';
 import "./Cards.css"
+import { Legend } from 'chart.js';
 const Cards = () => {
   const [cryptoData, setCryptoData] = useState({});
   const [loading, setLoading] = useState(true);
@@ -25,24 +26,19 @@ const Cards = () => {
   }, []);
 
   const renderDonutChart = (currency) => {
-    console.log("curren",currency)
-   let data1=cryptoData[currency]
-   console.log(data1)
-  let dataList=["usd","gbp","eur"]
-  // console.log(data1['usd'])
-  const data2 = dataList.map((crypto) =>{
+    let data1=cryptoData[currency]
+    let dataList=["usd","gbp","eur"]
+    const data2 = dataList.map((crypto) =>{
     return({
       name:crypto,
        value:data1[crypto],
-      // type:dataList[index]
     })
   })
     
   
-  console.log("data",data2)
     return (
 
-      <div key={currency} className='card-container' style={{ width: '30%', margin: '0 10px' }}>
+      <div key={currency} className='card-container' >
        <h3>{currency.toUpperCase()}</h3>
        <ResponsiveContainer width="100%" height={200}>
           <PieChart>
@@ -62,6 +58,7 @@ const Cards = () => {
               ))}
             </Pie>
             <Tooltip contentStyle={{ backgroundColor: "#8884d8", color: "#fff" }} itemStyle={{ color: "#fff" }} cursor={false}/>
+          <Legend/>
           </PieChart>
         </ResponsiveContainer>
       
@@ -70,7 +67,7 @@ const Cards = () => {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <div className='cards'>
       {loading?<h1>loading...</h1>: ['bitcoin', 'ethereum', 'litecoin','ripple'].map((currency) => renderDonutChart(currency))}
     
      </div>

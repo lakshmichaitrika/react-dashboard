@@ -11,10 +11,7 @@ font-size: 20px;
 .icon{
     color: yellow;
 }
-.text-content{
-    display: flex;
-    gap: 10px;
-}
+
 .header-button{
     background-color:rgb(40, 169, 40) ;
     color: white;
@@ -22,4 +19,9 @@ font-size: 20px;
     border: 0px ;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.component{
+    display: flex;
+    flex-direction: column;
 }

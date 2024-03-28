@@ -1,4 +1,4 @@
-import { GoOrganization } from "react-icons/go";
+
 import { IoCubeOutline } from "react-icons/io5";
 import { AiOutlineHome } from "react-icons/ai";
 import { LuArrowDownUp } from "react-icons/lu";
@@ -11,11 +11,7 @@ export const  NavList=[
     icon:AiOutlineHome,
     heading:"Home"
 },
-{
-    icon:GoOrganization,
-    heading:"Organization"
 
-},
 {
     icon:IoCubeOutline ,
     heading:"Assests"

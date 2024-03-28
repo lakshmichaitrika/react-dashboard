@@ -17,7 +17,55 @@
     width: 97%;
     border-radius: 10px;
     background-color: rgb(29, 26, 24);
- /* overflow:hidden; */
-grid-template-columns: 15rem auto;
+  overflow:hidden; 
+
 }
 
+.bars{
+    display: none;
+    
+}
+
+.bars-button{
+    background-color:transparent;
+    color: white;
+    padding: 10px;
+}
+
+.expanded{
+    grid-template-columns:20% auto;
+}
+.contact{
+    grid-template-columns:7% auto;
+}
+
+ @media screen and (max-width:1200px){
+    .content{
+        grid-template-columns: 15% auto;
+        overflow-y: scroll;
+    }
+   
+} 
+
+@media screen and (max-width:500px){
+    
+    .content{
+        grid-template-columns: 1fr;
+         
+    }
+    .bars{
+    padding: 10px;
+    z-index:100;
+    width: 100%;
+  
+  
+    display: block;
+    }
+}
+
+/* @media screen and (max-width:768px){
+    
+    .content::-webkit-scrollbar{
+        display: none;
+    }
+} */

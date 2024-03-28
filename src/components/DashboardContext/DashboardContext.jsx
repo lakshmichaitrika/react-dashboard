@@ -9,18 +9,12 @@ const DashboardContext = () => {
     <div>
       <div className="header">
         <div>
-          <div className="text-content">
-          <h4>Hello,</h4>
-          <h4 className="highlated-text">Brooklyn Simmons </h4>
-         <div className="icon">
+          <h4>Hello, <span className="highlated-text"> Brooklyn Simmons </span> <span className="icon">
          <MdOutlineWavingHand />
-         </div>
-         </div>
-         <div className="text-content">
-         
-          <p>Welocome to </p>
-          <p className="highlated-text"> Spot trading!</p>
-          </div>
+         </span></h4>
+          <p>Welocome to <span className="highlated-text"> Spot trading!</span>
+         </p>
+          
         </div>
         <div>
           <button type="button"  className="header-button">Start Trading</button>
@@ -29,7 +23,9 @@ const DashboardContext = () => {
       <div className="component">
       <Graph />
       <Card /> 
-        </div>
+      </div>
+     
+       
     
      
     </div>
