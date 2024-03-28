@@ -58,7 +58,6 @@ const Cards = () => {
               ))}
             </Pie>
             <Tooltip contentStyle={{ backgroundColor: "#8884d8", color: "#fff" }} itemStyle={{ color: "#fff" }} cursor={false}/>
-          <Legend/>
           </PieChart>
         </ResponsiveContainer>
       
